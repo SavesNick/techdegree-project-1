@@ -56,12 +56,13 @@ console.log(quotes);
 ***/
 function getRandomQuote(quotes) {
   var randomQuote = Math.floor(Math.random() * quotes.length)+1;
-  return quotes[randomQuote];
+  return quotes[0];
 }
 
 
 function printQuote() {
-getRandomQuote() = aPrintedQuote
+var aPrintedQuote = getRandomQuote()
+var inspire = ""
 
 /***
   Create the `printQuote` function to:
