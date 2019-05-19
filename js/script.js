@@ -55,22 +55,23 @@ console.log(quotes);
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
 function getRandomQuote(quotes) {
-  var randomQuote = Math.floor(Math.random() * quotes.length)+1;
-  return quotes[0];
+  var randomQuote = Math.floor(Math.random() * quotes.length);
+  return quotes[randomQuote];
 }
 
 
 function printQuote() {
-var = inspire = console.log(getRandomQuote())
-var htmlString = ""
+var theQuote = getRandomQuote()
+var htmlString = "<p class='quote'>" + theQuote + "</p>";
+htmlString += <p class="source"> + theQuote.source;
 
 /***
   Create the `printQuote` function to:
-   - Call the `getRandomQuote` function and assign it to a variable.
-   - Create a variable for the HTML string and set it equal to an empty string.
+   - Call the `getRandomQuote` function and assign it to a variable.-
+   - Create a variable for the HTML string and set it equal to an empty string.-
    - Use the HTML template in the instructions or the markup in the index.html file, AND
-     the random quote vairable to build your HTML string.
-   - Add the quote and source section to the HTML string.
+     the random quote vairable to build your HTML string.-
+   - Add the quote and source section to the HTML string.-
    - Use an if statement to check for the citation property before adding it to the HTML string.
    - Use an if statement to check for the year property before adding it to the HTML string.
    - Don't forget to close that final `p` tag.
