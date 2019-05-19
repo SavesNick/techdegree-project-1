@@ -62,8 +62,17 @@ function getRandomQuote(quotes) {
 
 function printQuote() {
 var theQuote = getRandomQuote()
+
 var htmlString = "<p class='quote'>" + theQuote + "</p>";
+
 htmlString += <p class="source"> + theQuote.source;
+
+if ("citation" in theQuote) {
+  htmlString += "<span class='citation'>" + theQuote.citation + "</span>";
+}
+if ("date" in theQuote) {
+  htmlString += "<span class='year'>" + theQuote.date + "</span>";
+}
 
 /***
   Create the `printQuote` function to:
