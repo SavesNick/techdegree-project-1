@@ -61,8 +61,8 @@ function getRandomQuote(quotes) {
 
 
 function printQuote() {
-var aPrintedQuote = getRandomQuote()
-var inspire = ""
+var = inspire = console.log(getRandomQuote())
+var htmlString = ""
 
 /***
   Create the `printQuote` function to:
