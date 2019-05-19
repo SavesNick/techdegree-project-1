@@ -14,7 +14,7 @@ project 1 - A Random Quote Generator
   Add the `year` property to at least one object in the array.
   Use console.log() to log your array of quotes to the console.
 ***/
-var quotes =
+var quotes =[
   {
 	quote: "'Hello World!'",
 	source:"-first code to be written"
@@ -45,8 +45,8 @@ var quotes =
    quote:"'Just as putting a gender on a being limits in some way the way we think about the being. By putting any kind of label on anything, we limit it.'",
    source:"- Dolores Cannon"
   }
+];
 
-console.log(quotes);
 
 
 /***
@@ -68,10 +68,10 @@ var htmlString = "<p class='quote'>" + theQuote + "</p>";
 htmlString += <p class="source"> + theQuote.source;
 
 if ("citation" in theQuote) {
-  htmlString += "<span class='citation'>" + theQuote.citation + "</span>";
+  htmlString += "<p class='citation'>" + theQuote.citation + "</p>";
 }
 if ("date" in theQuote) {
-  htmlString += "<span class='year'>" + theQuote.date + "</span>";
+  htmlString += "<p class='year'>" + theQuote.date + "</p>";
 }
 
 /***
@@ -88,7 +88,7 @@ if ("date" in theQuote) {
 ***/
 }
 
-
+printQuote();
 /***
   When the "Show another quote" button is clicked, the event listener
   below will be triggered, and it will call, or "invoke", the `printQuote`
