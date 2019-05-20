@@ -63,9 +63,9 @@ function getRandomQuote() {
 function printQuote() {
 var theQuote = getRandomQuote()
 
-var htmlString = "<p class='quote'>" + theQuote + "</p>";
+var htmlString = "<p class='quote'>" + theQuote.quote + "</p>";
 
-htmlString += "<p class='source'>" + theQuote.quotes"</p>";
+htmlString += "<p class='source'>" + theQuote.source"</p>";
 
 if ("citation" in theQuote) {
   htmlString += "<p class='citation'>" + theQuote.citation + "</p>";
