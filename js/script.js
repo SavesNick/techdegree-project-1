@@ -73,7 +73,7 @@ if ("citation" in theQuote) {
 if ("date" in theQuote) {
   htmlString += "<p class='year'>" + theQuote.date + "</p>";
 }
-
+document.getElementById('quote-box').innerHTML = htmlString;
 /***
   Create the `printQuote` function to:
    - Call the `getRandomQuote` function and assign it to a variable.-
@@ -81,9 +81,9 @@ if ("date" in theQuote) {
    - Use the HTML template in the instructions or the markup in the index.html file, AND
      the random quote vairable to build your HTML string.-
    - Add the quote and source section to the HTML string.-
-   - Use an if statement to check for the citation property before adding it to the HTML string.
-   - Use an if statement to check for the year property before adding it to the HTML string.
-   - Don't forget to close that final `p` tag.
+   - Use an if statement to check for the citation property before adding it to the HTML string.-
+   - Use an if statement to check for the year property before adding it to the HTML string.-
+   - Don't forget to close that final `p` tag.-
    - Set the `innerHTML` of the `quote-box` div to the HTML string.
 ***/
 }
