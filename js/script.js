@@ -54,7 +54,7 @@ var quotes =[
    - Create a variable to store a random number
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
-function getRandomQuote(quotes) {
+function getRandomQuote() {
   var randomQuote = Math.floor(Math.random() * quotes.length);
   return quotes[randomQuote];
 }
@@ -65,7 +65,7 @@ var theQuote = getRandomQuote()
 
 var htmlString = "<p class='quote'>" + theQuote + "</p>";
 
-htmlString += <p class="source"> + theQuote.source;
+htmlString += "<p class='source'>" + theQuote.quotes"</p>";
 
 if ("citation" in theQuote) {
   htmlString += "<p class='citation'>" + theQuote.citation + "</p>";
