@@ -14,7 +14,9 @@ var quotes =[
 },
   {
 	quote:"'Hello everybody '",
-	source: " -Doctor Nick"
+	source: " -Doctor Nick",
+  citation:"The Simpsons"
+
 },
 
   {
@@ -40,7 +42,9 @@ var quotes =[
  },
 {
  quote: "I love Team Treehouse!",
- source:"Nikita Savelev"
+ source:"Nikita Savelev",
+ citation:"A conversation held with myself while coding",
+year: 2019
 }
 ];
 
@@ -56,15 +60,15 @@ function getRandomQuote() {
 function printQuote() {
 var theQuote = getRandomQuote()
 
-var htmlString = "<p class='quote'>" + theQuote.quote + "</p>";
+var htmlString += "<p class='quote'>" + theQuote.quote + "</p>";
 
-htmlString += "<p class='source'>" + theQuote.source"</p>";
+htmlString += "<p class='source'>" + theQuote.source + "</p>";
 
-if ("citation" in theQuote) {
+if (theQuote.citation) {
   htmlString += "<p class='citation'>" + theQuote.citation + "</p>";
 }
-if ("date" in theQuote) {
-  htmlString += "<p class='year'>" + theQuote.date + "</p>";
+if (theQuote.year) {
+  htmlString += "<p class='year'>" + theQuote.year + "</p>";
 }
 document.getElementById('quote-box').innerHTML = htmlString;
 
